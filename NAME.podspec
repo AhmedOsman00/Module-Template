@@ -3,9 +3,9 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'A short description of ${POD_NAME}.'
 
-  s.homepage         = 'https://github.com/AhmedOsman00/{MODULE_TYPE}'
+  s.homepage         = 'https://github.com/AhmedOsman00/${MODULE_TYPE}'
   s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
-  s.source           = { :git => 'https://github.com/AhmedOsman00/{MODULE_TYPE}.git'}
+  s.source           = { :git => 'https://github.com/AhmedOsman00/${MODULE_TYPE}.git'}
 
   s.ios.deployment_target = '11.4'
 

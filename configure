@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'uri'
 
 $current_dir = File.dirname(File.expand_path(__FILE__))
 Dir[File.join($current_dir, "setup/*.rb")].each do |file|
@@ -7,6 +6,5 @@ Dir[File.join($current_dir, "setup/*.rb")].each do |file|
 end
 
 pod_name = ARGV.shift
-module_type = '' # URI(Dir.pwd).path.split('/').last
-puts $current_dir
+module_type = $current_dir.split(/\//)[-2]
 Pod::TemplateConfigurator.new(pod_name, module_type).run
