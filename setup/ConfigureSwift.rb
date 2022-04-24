@@ -12,9 +12,6 @@ module Pod
     end
 
     def perform
-
-      `mv ./templates/swift/* ./`
-
       # There has to be a single file in the Sources dir
       # or a framework won't be created
       `touch ./Sources/ReplaceMe.swift`
