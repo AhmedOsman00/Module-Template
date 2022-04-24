@@ -34,7 +34,7 @@ module Pod
       file_names.each do |file_name|
         text = File.read(file_name)
         text.gsub!("${POD_NAME}", @pod_name)
-        text.gsub!("${POD_NAME}", @module_type)
+        text.gsub!("${MODULE_TYPE}", @module_type)
         text.gsub!("${USER_NAME}", user_name)
         text.gsub!("${USER_EMAIL}", user_email)
         File.open(file_name, "w") { |file| file.puts text }
