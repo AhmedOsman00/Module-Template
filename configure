@@ -7,5 +7,6 @@ Dir[File.join($current_dir, "setup/*.rb")].each do |file|
 end
 
 pod_name = ARGV.shift
-module_type = URI(Dir.pwd).path.split('/').last
+module_type = '' # URI(Dir.pwd).path.split('/').last
+puts current_dir
 Pod::TemplateConfigurator.new(pod_name, module_type).run
