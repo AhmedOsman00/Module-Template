@@ -33,7 +33,7 @@ module Pod
       puts ""
 
       puts " Ace! you're ready to go!"
-      puts " Add the " + pod_name + " to your project and start development."
+      puts " Add the #{pod_name} to your project and start development."
     end
   end
 end

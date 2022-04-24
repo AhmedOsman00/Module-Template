@@ -9,7 +9,7 @@ module Pod
     def initialize(pod_name, module_type)
       @pod_name = pod_name
       @module_type = module_type
-      @message_bank = MessageBank.new(self)
+      @message_bank = MessageBank.new(pod_name)
     end
 
     def run
